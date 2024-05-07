@@ -28,7 +28,7 @@ const Skill = () => {
   return (
     <>
       <section id="skill">
-        <div className="slkll__inner">
+        <div className="skill__inner">
             <h2 className="skill__title">
                 challenge <em>나의 도전</em>
             </h2>
