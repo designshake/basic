@@ -39,6 +39,7 @@ const Header = () => {
                         <a href="/">portfolio<em>React</em></a>
                     </h1>
                 </div>
+                {/* `` backtick 억음부호 */}
                 <nav 
                     className={`header__nav ${show ? "show" : ""}`} 
                     role="navigation" 
