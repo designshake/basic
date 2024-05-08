@@ -1,5 +1,18 @@
 import React, { useState } from "react";
 
+//data를 따로 빼줘야 편하다. 작업이 수월하기 때문.
+
+//배열을 만든다.
+/**
+ {
+    title:"about",
+    url:"#ddd"
+ } 
+  nav 란 이름안에 headerNav의 데이타가 들어가 있다.
+  nav 이름은 자유자재로 지워줘도 된다.
+
+  5번을 반복하라. 
+ */
 const headerNav = [
     {
         title:'intro',
@@ -14,7 +27,7 @@ const headerNav = [
         url:'#site'
     },
     {
-        title:'porddtfolio',
+        title:'portfolio',
         url:'#port'
     },
     {
@@ -23,11 +36,12 @@ const headerNav = [
     }
 ];
 
-
+//menu.js 이미 작성.
 const Header = () => {
     const [show, setShow] = useState(false);
     
     const toggleMenu = () => {
+        //alert('dd')
         setShow((prevShow) => !prevShow);
     }
 
@@ -39,7 +53,8 @@ const Header = () => {
                         <a href="/">portfolio<em>React</em></a>
                     </h1>
                 </div>
-                {/* `` backtick 억음부호 */}
+                {/* `` backtick 억음부호  show 가 붙거나 show가 붙지 않거나. true면 show가 붙고 아니라면
+                아무것도 붙지 않게.*/}
                 <nav 
                     className={`header__nav ${show ? "show" : ""}`} 
                     role="navigation" 
@@ -47,7 +62,7 @@ const Header = () => {
                 >
                 
                     <ul>
-                        {/*key는 index값 */}
+                        {/*key는 index값 5번을 반복해야 해서 */}
                         {headerNav.map((nav, key) => (
                         <li key={key}>
                             <a href={nav.url}>{nav.title}</a>
@@ -59,6 +74,7 @@ const Header = () => {
                     className="header__nav__mobile" 
                     id="headerToggle" 
                     aria-controls="primary-menu" 
+                    // ? show 라면 true : 그게 아니라면 false
                     aria-expanded={show ? "true" : "false"} 
                     role="button"
                     tabIndex="0"
