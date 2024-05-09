@@ -1,40 +1,7 @@
 import React, { useState } from "react";
 
-//data를 따로 빼줘야 편하다. 작업이 수월하기 때문.
-
-//배열을 만든다.
-/**
- {
-    title:"about",
-    url:"#ddd"
- } 
-  nav 란 이름안에 headerNav의 데이타가 들어가 있다.
-  nav 이름은 자유자재로 지워줘도 된다.
-
-  5번을 반복하라. 
- */
-const headerNav = [
-    {
-        title:'intro',
-        url:'#intro'
-    },
-    {
-        title:'skill',
-        url:'#skill'
-    },
-    {
-        title:'SitSSSe',
-        url:'#site'
-    },
-    {
-        title:'portfolio',
-        url:'#port'
-    },
-    {
-        title:'contact',
-        url:'#contact'
-    }
-];
+//constants > index.js에 데이타를 다 모아놓고 거기서 불러온다.
+import { headerNav } from "../constants"
 
 //menu.js 이미 작성.
 const Header = () => {

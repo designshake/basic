@@ -1,55 +1,7 @@
 import React from 'react'
 
+import { footerText } from "../constants";
 
-const footerText = [
-  {
-    title:"에버랜드홈페이지",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-  {
-    title:"에버랜드홈페이지2",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-  {
-    title:"에버랜드홈페이지3",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-  {
-    title:"에버랜드홈페이지4",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-  {
-    title:"에버랜드홈페이지5",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-  {
-    title:"에버랜드홈페이지6",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-  {
-    title:"에버랜드홈페이지7",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-  {
-    title:"에버랜드8",
-    desc:"푸바오와 쌍둥바오들 이야기입니다.",
-    link:"https://www.youtube.com/@Webstoryboy",
-  },
-
-];
 
 const Footer = () => {
   return (
@@ -63,7 +15,7 @@ const Footer = () => {
             <div className="footer__info">
                 <div className="left">
                     <div className="title">
-                        <a href="#">sign up</a>
+                        <a href="/">sign up</a>
                     </div>
                     <p className="desc">회원가입을 하시면 댓글과 게시판 기능을 이용할 수 있습니다.</p>
                 </div>

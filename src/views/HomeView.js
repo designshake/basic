@@ -1,5 +1,8 @@
+
+//연동화 시켜줘야 해서 불러온다.
+
 import React from 'react'
-import Header from '../component/Header'
+import Header from "../component/Header";
 import Skip from '../component/Skip'
 import Intro from '../component/Intro'
 import Skill from '../component/Skill'
@@ -10,7 +13,9 @@ import Footer from '../component/Footer'
 import Main from '../component/Main'
 
 
+
 const HomeView = () => {
+
   return (
     <div>
         <Skip />

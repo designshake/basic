@@ -1,51 +1,7 @@
 import React from 'react'
+//{siteText} ->X { siteText } ->o 꼭 양옆에 한 칸씩 띄어준다.
+import { siteText } from "../constants"
 
-const siteText = [
-  {
-      text: ["make", "site compliant with", "webstandard"],
-      title: "푸바오 에버랜드",
-      code: "https://github.com/designshake/practice-basic",
-      view: "https://port2023-vite.netlify.app",
-      info: [
-          "site coding",
-          "production period : two days",
-          "use stack : HTML5/CSS3, CSS Variable, Vite",
-      ],
-  },
-  {
-      text: ["make", "site compliant with", "react.js"],
-      title: "아이바오 에버랜드",
-      code: "https://github.com/designshake/practice-basic",
-      view: "https://port2023-react.netlify.app",
-      info: [
-          "site coding",
-          "production period : two days",
-          "use stack : HTML5/CSS3, CSS Variable, Vite",
-      ],
-  },
-  {
-      text: ["make", "site compliant with", "vue.js"],
-      title: "러바오 에버랜드",
-      code: "https://github.com/designshake/practice-basic",
-      view: "https://port2023-vue.netlify.app",
-      info: [
-          "site coding",
-          "production period : two days",
-          "use stack : HTML5/CSS3, Scss Variable, vue",
-      ],
-  },
-  {
-      text: ["make", "site compliant with", "next.js"],
-      title: "쌍둥바오 에버랜드",
-      code: "https://github.com/webstoryboy/port2023-next",
-      view: "https://port2023-next.netlify.app",
-      info: [
-          "site coding",
-          "production period : two days",
-          "use stack : HTML5/CSS3, Scss Variable, next.js",
-      ],
-  },
-];
 
 
 const Site = () => {
